@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Auth Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="auth-container">
+        <!-- Login Section -->
+        <section class="login-section" id="login-section">
+            <div class="form-header">
+                <h2>DressUp Studio</h2>
+                <p>Login to access your account enjoy shoppin on our website</p>
+            </div>
+            
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <span class="password-toggle" id="loginToggle">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+                
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+                    <p><a href="#">Forgot password?</a></p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Signup Section -->
+        <section class="signup-section" id="signup-section">
+            <button class="toggle-form" id="toggleForm">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <p>Join us today and get started</p>
+            </div>
+            
+            <form id="signupForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <div class="error-message">Please enter your first name</div>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                    <div class="error-message">Please enter your last name</div>
+                </div>
+                
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="signupEmail" placeholder="Email Address" required>
+                    <div class="error-message">Please enter a valid email</div>
+                </div>
+                
+               
+                
+               
+                
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="signupPassword" placeholder="Password" required>
+                    <span class="password-toggle" id="signupToggle">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                    <div class="error-message">Password must be at least 8 characters</div>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <span class="password-toggle" id="confirmToggle">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                    <div class="error-message">Passwords do not match</div>
+                </div>
+                
+                <button type="submit" class="btn">Sign Up</button>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
